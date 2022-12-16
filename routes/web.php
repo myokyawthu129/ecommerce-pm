@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// auth route
+Route::get('/login','AuthController@showLogin');
+Route::post('/login','AuthController@postLogin');
+
+Route::get('/register','AuthController@showRegister');
+Route::post('/login','AuthController@postRegister');
+
 Route::get('/','PageController@home');
 Route::get('/product/{slug}', 'ProductController@detail');
 

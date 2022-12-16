@@ -2,9 +2,9 @@
 
 
 @section('content')
-<main class="main-wrapper">
+<main class="main-wrapper" id="root">
     <!-- Start Shop Area  -->
-    <div class="axil-single-product-area axil-section-gap pb--0 bg-color-white">
+    {{-- <div class="axil-single-product-area axil-section-gap pb--0 bg-color-white">
         <div class="single-product-thumb mb--40">
             <div class="container">
                 <div class="row">
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <!-- End .single-product-thumb -->
+
         <div class="woocommerce-tabs wc-tabs-wrapper bg-vista-white">
             <div class="container">
 
@@ -300,16 +300,11 @@
                         <!-- End .col -->
                     </div>
                 </div>
-                <!-- End .reviews-wrapper -->
+
             </div>
         </div>
-
-
-
     </div>
-    <!-- End Shop Area  -->
 
-    <!-- Start Recently Viewed Product Area  -->
     <div class="axil-product-area bg-color-white axil-section-gap pb--50 pb_sm--30">
         <div class="container">
             <div class="section-title-wrapper">
@@ -633,13 +628,14 @@
 
             </div>
         </div>
-    </div>
-    <!-- End Recently Viewed Product Area  -->
-    <!-- Start Axil Newsletter Area  -->
-    <!-- End Axil Newsletter Area  -->
+    </div> --}}
+
 </main>
 @endsection
 
 @section('script')
+<script>
+    window.product_slug = "{{ $slug }}"
+</script>
 <script src="{{ mix('js/productDetail.js') }}"></script>
 @endsection

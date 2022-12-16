@@ -17,8 +17,11 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "@types/react": "^18.0.26",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^6.4.4"
+        "react-router-dom": "^6.4.4",
+        "react-star-rating": "^1.4.2",
+        "react-star-ratings": "^2.3.0"
     }
 }

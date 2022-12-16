@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Category;
+
 class ProductController extends Controller
 {
 
@@ -12,7 +14,8 @@ class ProductController extends Controller
         if(!$product){
             return redirect('/')->with('error','Product Not Found');
         }
-        return view('product-detail', compact('product'));
+        $category = Category::withCount('product')->get();
+        return view('product-detail', compact('category','slug'));
     }
 
 }

@@ -27,15 +27,14 @@
     <link rel="stylesheet" href="{{ asset('web-assets/css/vendor/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('web-assets/css/vendor/base.css') }}">
     <link rel="stylesheet" href="{{ asset('web-assets/css/style.min.css') }}">
+
+    {{-- toastify --}}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     @yield('style')
 </head>
 
 
 <body class="sticky-header newsletter-popup-modal">
-
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
     <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
     <header class="header axil-header header-style-1">
         <div class="header-top-campaign">
@@ -57,8 +56,6 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
                                 </ul>
                             </div>
                             <div class="dropdown">
@@ -67,8 +64,7 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">AUD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -77,8 +73,8 @@
                         <div class="header-top-link">
                             <ul class="quick-link">
                                 <li><a href="#">Help</a></li>
-                                <li><a href="sign-up.html">Join Us</a></li>
-                                <li><a href="sign-in.html">Sign In</a></li>
+                                <li><a href="">Join Us</a></li>
+                                <li><a href="">Sign In</a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,20 +86,20 @@
         <div class="axil-mainmenu">
             <div class="container">
                 <div class="header-navbar">
-                    <div class="header-brand">
-                        <a href="index-2.html" class="logo logo-dark">
+                    <div class="header-brand order-3">
+                        <a href="" class="logo logo-dark">
                             <img src="" alt="Site Logo">
                         </a>
-                        <a href="index-2.html" class="logo logo-light">
+                        <a href="" class="logo logo-light">
                             <img src="" alt="Site Logo">
                         </a>
                     </div>
-                    <div class="header-main-nav">
+                    <div class="header-main-nav order-2">
                         <!-- Start Mainmanu Nav -->
                         <nav class="mainmenu-nav">
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
                             <div class="mobile-nav-brand">
-                                <a href="index-2.html" class="logo">
+                                <a href="" class="logo">
                                     <img src="" alt="Site Logo">
                                 </a>
                             </div>
@@ -111,43 +107,28 @@
                                 <li class="menu-item-has-children">
                                     <a href="#">Home</a>
                                     <ul class="axil-submenu">
-                                        <li><a href="">Home - Electronics</a></li>
-                                        <li><a href="">Home - NFT</a></li>
-                                        <li><a href="">Home - Fashion</a></li>
-                                        <li><a href="">Home - Jewellery</a></li>
-                                        <li><a href="">Home - Furniture</a></li>
-                                        <li><a href="">Home - Multipurpose</a></li>
+                                        <li><a href="">Home</a></li>
+
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Shop</a>
                                     <ul class="axil-submenu">
-                                        <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
-                                        <li><a href="shop.html">Shop no Sidebar</a></li>
-                                        <li><a href="single-product.html">Product Variation 1</a></li>
-                                        <li><a href="single-product-2.html">Product Variation 2</a></li>
-                                        <li><a href="single-product-3.html">Product Variation 3</a></li>
-                                        <li><a href="single-product-4.html">Product Variation 4</a></li>
-                                        <li><a href="single-product-5.html">Product Variation 5</a></li>
-                                        <li><a href="single-product-6.html">Product Variation 6</a></li>
-                                        <li><a href="single-product-7.html">Product Variation 7</a></li>
+                                        <li><a href="shop-sidebar.html">Shop</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Pages</a>
                                     <ul class="axil-submenu">
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="my-account.html">Account</a></li>
-                                        <li><a href="sign-up.html">Sign Up</a></li>
-                                        <li><a href="sign-in.html">Sign In</a></li>
-                                        <li><a href="forgot-password.html">Forgot Password</a></li>
-                                        <li><a href="reset-password.html">Reset Password</a></li>
-                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="404.html">404 Error</a></li>
-                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="">Wishlist</a></li>
+                                        <li><a href="">Cart</a></li>
+                                        <li><a href="">Checkout</a></li>
+                                        <li><a href="">Account</a></li>
+                                        <li><a href="">Sign Up</a></li>
+                                        <li><a href="">Sign In</a></li>
+                                        <li><a href="">Forgot Password</a></li>
+                                        <li><a href="">Reset Password</a></li>
+                                        <li><a href="">404 Error</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="about-us.html">About</a></li>
@@ -155,20 +136,14 @@
                                     <a href="#">Blog</a>
                                     <ul class="axil-submenu">
                                         <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-details.html">Standard Post</a></li>
-                                        <li><a href="blog-gallery.html">Gallery Post</a></li>
-                                        <li><a href="blog-video.html">Video Post</a></li>
-                                        <li><a href="blog-audio.html">Audio Post</a></li>
-                                        <li><a href="blog-quote.html">Quote Post</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="">Contact</a></li>
                             </ul>
                         </nav>
                         <!-- End Mainmanu Nav -->
                     </div>
-                    <div class="header-action">
+                    <div class="header-action order-1">
                         <ul class="action-list">
                             <li class="axil-search">
                                 <a href="javascript:void(0)" class="header-search-icon" title="Search">
@@ -191,25 +166,22 @@
                                     <i class="flaticon-person"></i>
                                 </a>
                                 <div class="my-account-dropdown">
-                                    <span class="title">QUICKLINKS</span>
-                                    <ul>
-                                        <li>
-                                            <a href="my-account.html">My Account</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Initiate return</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Language</a>
-                                        </li>
-                                    </ul>
-                                    <div class="login-btn">
-                                        <a href="sign-in.html" class="axil-btn btn-bg-primary">Login</a>
-                                    </div>
-                                    <div class="reg-footer text-center">No account yet? <a href="sign-up.html" class="btn-link">REGISTER HERE.</a></div>
+                                    @guest
+
+                                    @endguest
+                                        <div class="login-btn">
+                                            <a href="{{ url('/login') }}" class="axil-btn btn-bg-primary">Login</a>
+                                        </div>
+                                        <div class="login-btn">
+                                            <a href="{{ url('/register') }}" class="axil-btn btn-bg-primary">Register</a>
+                                        </div>
+                                    @auth
+                                        <ul>
+                                            <li class="text-center">
+                                                <a href="url('/profile')"> <i class="flaticon-person"></i> My Account</a>
+                                            </li>
+                                        </ul>
+                                    @endauth
                                 </div>
                             </li>
                             <li class="axil-mobile-toggle">
@@ -224,6 +196,182 @@
         </div>
         <!-- End Mainmenu Area -->
     </header>
+    <div class="main-wrapper">
+        <div class="axil-main-slider-area main-slider-style-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="main-slider-content">
+                            <div class="slider-content-activation-one">
+                                <div class="single-slide slick-slide" data-sal="slide-up" data-sal-delay="400" data-sal-duration="800">
+                                    <span class="subtitle"><i class="fas fa-fire"></i> Hot Deal In This Week</span>
+                                    <h1 class="title">Roco Wireless Headphone</h1>
+                                    <div class="slide-action">
+                                        <div class="shop-btn">
+                                            <a href="shop.html" class="axil-btn btn-bg-white"><i class="fal fa-shopping-cart"></i>Shop Now</a>
+                                        </div>
+                                        <div class="item-rating">
+                                            <div class="thumb">
+                                                <ul>
+                                                    <li><img src="{{ asset('web-assets/images/others/author1.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author2.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author3.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author4.png') }}" alt="Author"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="content">
+                                                <span class="rating-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </span>
+                                                <span class="review-text">
+                                            <span>100+</span> Reviews
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide">
+                                    <span class="subtitle"><i class="fas fa-fire"></i> Hot Deal In This Week</span>
+                                    <h1 class="title">Smart Digital Watch</h1>
+                                    <div class="slide-action">
+                                        <div class="shop-btn">
+                                            <a href="shop.html" class="axil-btn btn-bg-white"><i class="fal fa-shopping-cart"></i>Shop Now</a>
+                                        </div>
+                                        <div class="item-rating">
+                                            <div class="thumb">
+                                                <ul>
+                                                    <li><img src="{{ asset('web-assets/images/others/author1.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author2.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author3.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author4.png') }}" alt="Author"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="content">
+                                                <span class="rating-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </span>
+                                                <span class="review-text">
+                                            <span>100+</span> Reviews
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide">
+                                    <span class="subtitle"><i class="fas fa-fire"></i> Hot Deal In This Week</span>
+                                    <h1 class="title">Roco Wireless Headphone</h1>
+                                    <div class="slide-action">
+                                        <div class="shop-btn">
+                                            <a href="shop.html" class="axil-btn btn-bg-white"><i class="fal fa-shopping-cart"></i>Shop Now</a>
+                                        </div>
+                                        <div class="item-rating">
+                                            <div class="thumb">
+                                                <ul>
+                                                    <li><img src="{{ asset('web-assets/images/others/author1.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author2.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author3.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author4.png') }}" alt="Author"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="content">
+                                                <span class="rating-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </span>
+                                                <span class="review-text">
+                                            <span>100+</span> Reviews
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide">
+                                    <span class="subtitle"><i class="fas fa-fire"></i> Hot Deal In This Week</span>
+                                    <h1 class="title">Smart Digital Watch</h1>
+                                    <div class="slide-action">
+                                        <div class="shop-btn">
+                                            <a href="shop.html" class="axil-btn btn-bg-white"><i class="fal fa-shopping-cart"></i>Shop Now</a>
+                                        </div>
+                                        <div class="item-rating">
+                                            <div class="thumb">
+                                                <ul>
+                                                    <li><img src="{{ asset('web-assets/images/others/author1.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author2.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author3.png') }}" alt="Author"></li>
+                                                    <li><img src="{{ asset('web-assets/images/others/author4.png') }}" alt="Author"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="content">
+                                                <span class="rating-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </span>
+                                                <span class="review-text">
+                                            <span>100+</span> Reviews
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-6">
+                        <div class="main-slider-large-thumb">
+                            <div class="slider-thumb-activation-one axil-slick-dots">
+                                <div class="single-slide slick-slide" data-sal="slide-up" data-sal-delay="600" data-sal-duration="1500">
+                                    <img src="{{ asset('web-assets/images/product/product-38.png') }}" alt="Product">
+                                    <div class="product-price">
+                                        <span class="text">From</span>
+                                        <span class="price-amount">$49.00</span>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide" data-sal="slide-up" data-sal-delay="600" data-sal-duration="1500">
+                                    <img src="{{ asset('web-assets/images/product/product-39.png') }}" alt="Product">
+                                    <div class="product-price">
+                                        <span class="text">From</span>
+                                        <span class="price-amount">$49.00</span>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide">
+                                    <img src="{{ asset('web-assets/images/product/product-38.png') }}" alt="Product">
+                                    <div class="product-price">
+                                        <span class="text">From</span>
+                                        <span class="price-amount">$49.00</span>
+                                    </div>
+                                </div>
+                                <div class="single-slide slick-slide">
+                                    <img src="{{ asset('web-assets/images/product/product-39.png') }}" alt="Product">
+                                    <div class="product-price">
+                                        <span class="text">From</span>
+                                        <span class="price-amount">$49.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="shape-group">
+                <li class="shape-1"><img src="{{ asset('web-assets/images/others/shape-1.png') }}" alt="Shape"></li>
+                <li class="shape-2"><img src="{{ asset('web-assets/images/others/shape-2.png') }}" alt="Shape"></li>
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -333,7 +481,7 @@
                     <div class="col-xl-4 col-lg-12">
                         <div class="copyright-left d-flex flex-wrap justify-content-center">
                             <ul class="quick-link">
-                                <li>© 2022. All rights reserved by <a target="_blank" href="https://axilthemes.com/">Axilthemes</a>.</li>
+                                <li>© 2022. All rights reserved by <a target="_blank" href="">PM Computer</a>.</li>
                             </ul>
                         </div>
                     </div>
@@ -709,9 +857,33 @@
     <script src="{{ asset('web-assets/js/vendor/counterup.js') }}"></script>
     <script src="{{ asset('web-assets/js/vendor/waypoints.min.js') }}"></script>
 
+    {{-- toastify --}}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    @if(session()->has('error'))
+    <script>
+        Toastify({
+            text:"{{ session('error') }}",
+            position:'center'
+        }).showToast();
+    </script>
+    @endif
+
+    @if(session()->has('success'))
+    <script>
+        Toastify({
+            text:"{{ session('success') }}",
+            position:'center'
+        }).showToast();
+    </script>
+    @endif
+
+
     <!-- Main JS -->
     <script src="{{ asset('web-assets/js/rtl-main.js') }}"></script>
     <script>
+
+
         window.updateCart = cart=>{
            const cartCount = document.getElementById('cartCount');
            console.log(cartCount);
